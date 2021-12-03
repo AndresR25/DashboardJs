@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <body>
+    <h1>
+        Welcome
+    </h1>
+    <br>
+    <div>
+        <h2>
+            <%= dog.dogName %>
+        </h2>
+        <p>
+            Id: <%= dog.dogId %>
+        </p>
+        <p>
+            Information: "<%= dog.dogInformation %>"
+        </p>
+        <div>
+            <a href="/dog/alldogs" >
+                Go Home 
+            </a>
+            <a href="/dog/dogs/edit/<%= dog.dogId %>" >
+                Edit Information 
+            </a>
+            <form method="POST" action="/dog/destroy/<%= dog.dogId %>">
+                <button type="submit">
+                    Delete Dog
+                </button>
+            </form>   
+        </div>
+    </div>
+  </body>
+</html>

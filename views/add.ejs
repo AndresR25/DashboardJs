@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>
+    Wellcome
+</h1>
+<h2>
+    New Dog
+</h2>
+<br>
+<form method="POST" action="/dog/dogs" >
+    <div>
+        <label for="dogName">
+            Name: 
+        </label>
+        <input type="text" id="dogName" name="dogName" />
+    </div>
+    <div>
+        <label for="dogInformation">
+            Information: 
+        </label>
+        <textarea type="text" id="dogInformation" name="dogInformation"></textarea>
+    </div>
+    <div>
+        <label for="dogId">
+            Id: 
+        </label>
+        <input type="number" id="dogId" name="dogId" />
+    </div>
+    <button type="submit">
+        Add
+    </button>
+</form>
+</body>
+</html>

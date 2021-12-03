@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <main>
+      <div>
+          <h1>
+              Dogs:
+          </h1>
+          <a href="/dog/dogs/new">
+              NewDog
+          </a>
+          <div>
+              <% for(const dog of dogs ) {%>
+                  <h2>
+                      Dog: <%= dog.dogName %>
+                  </h2>
+                  <a href="/dog/dogs/<%= dog.dogId %>"> Info</a>
+              <% } %>
+          </div>
+      </div>
+  </main>
+</body>
+</html>
